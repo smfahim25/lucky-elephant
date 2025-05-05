@@ -1,0 +1,418 @@
+{
+    "program": {
+      "candyMachine": "Gwmr8rEHcWYqKHf7AuyJgWuHiFrE9GeLnmEyVD7tpky6",
+      "candyGuard": "7FzQnpSbcaBHx7gtwd7enZeCPYwhKndcXGoJNdZUoUpL",
+      "candyMachineCreator": "9s1nUdqKxiy2zXry3XW2AxTgLZDbwHfu9w4vyGYBKiVV",
+      "collectionMint": "GfvCGwrGQch2vegUXZkQm7up1N1jomwmLx6H5VQ92zTh"
+    },
+    "items": {
+      "-1": {
+        "name": "Lil Elly Degens",
+        "image_hash": "b76f71bbf52705dd93dbb2999c051fbe29c34843495fe74ce98acc73692d8934",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafkreifxn5y3x5jhaxozhw5stgoakh56fhbuqq2jl7tuz2mkzrzwslmjgq",
+        "metadata_hash": "39bed3c067d20412a33989e0984337e9a330d4841145c379aad8d2835a44c716",
+        "metadata_link": "https://gateway.irys.xyz/72pR45drpMTD6uvv7KhUezPEjhP2yjSHTu5uLH76oNdo",
+        "onChain": true
+      },
+      "0": {
+        "name": "Lil Elly Degens #0",
+        "image_hash": "f04bb110c4d8c1882f26e028e3cc1327fefceb430d408735f0b1df232046b782",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/0.jpg",
+        "metadata_hash": "a6d06246817d85674bf5abe5fecd2b37d11672fddb492a5026afaa8feb3f3514",
+        "metadata_link": "https://gateway.irys.xyz/BgY2ZVotH1Es5pqqMgXvYkRP8G4A4b2WYoTzS6sCgF45",
+        "onChain": true
+      },
+      "1": {
+        "name": "Lil Elly Degens #1",
+        "image_hash": "20b912849162d868d27c3c4fc6b4d274084dc8e489f2f97110d7d5abff8a3a94",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/1.jpg",
+        "metadata_hash": "46b211037fcacee308143caaa1f4e564c43171facaaaefb9c9e2f72c7216e112",
+        "metadata_link": "https://gateway.irys.xyz/CEr8TVENdx4ykC5xkFBdYEunm3e5jrBNb5FG65bBR4ub",
+        "onChain": true
+      },
+      "2": {
+        "name": "Lil Elly Degens #2",
+        "image_hash": "f0f48994ec9f95946ec08c0430a390852002152e51bddabef0ebbb3d7bc05afd",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/2.jpg",
+        "metadata_hash": "d756c6cb69e019bf68b01b1b3df3561963d86dab96f5fab6f167516b18e9073e",
+        "metadata_link": "https://gateway.irys.xyz/2KidbH3H3rEZ8YXo99oUU3NL7Xky3pmLAEj2b9dr5nUu",
+        "onChain": true
+      },
+      "3": {
+        "name": "Lil Elly Degens #3",
+        "image_hash": "fac48f1ecc603153d611b802860f0c0c9307303a4f08a8dd3a0ec375a5572afd",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/3.jpg",
+        "metadata_hash": "e3d8c07d2d9ddf5bf6472e1dbb22e2f6028bafd34fb9539bf66144312ef78dc2",
+        "metadata_link": "https://gateway.irys.xyz/C4Yz2LYGn21FbkZzgeza1Y74gT5C1KEuMM5PqSE1cgC4",
+        "onChain": true
+      },
+      "4": {
+        "name": "Lil Elly Degens #4",
+        "image_hash": "19befbd1ae01b82c392be33654ccf369897833ac58eb197972e2589f23168c06",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/4.jpg",
+        "metadata_hash": "c8ee773f3101d0e58f1c005baf30948c0eefb11fd41f773d849754c23eb10a3c",
+        "metadata_link": "https://gateway.irys.xyz/AzYz3wPYmrKje2EHE4WQUGfPoUrRqT1J7zVZQpYqNAMH",
+        "onChain": true
+      },
+      "5": {
+        "name": "Lil Elly Degens #5",
+        "image_hash": "399a0683682a2e6ba77a2cb6330b45c9c11006e4fdabac92341adbf6baec2e44",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/5.jpg",
+        "metadata_hash": "d8035b53463a4a6ce2550250e910c143aa79995cc414158e221c853ed170314c",
+        "metadata_link": "https://gateway.irys.xyz/3W7sRGAUPuZqc1C734bJukZ4q59fWpEsfCjyF1cTPQcT",
+        "onChain": true
+      },
+      "6": {
+        "name": "Lil Elly Degens #6",
+        "image_hash": "6ea4bf7db2b9f8fd20532b341cf62d320cdf181243a5de6b2c6ec78a6f996784",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/6.jpg",
+        "metadata_hash": "e8f97eebdcd0dc90f53ec58ceb5453794eb15ba55ac393adff5ee1c7e9a961e5",
+        "metadata_link": "https://gateway.irys.xyz/FnzfzbhkGhLwhVhNnKyHbfP935XLcL8C35N2zDuZmjfE",
+        "onChain": true
+      },
+      "7": {
+        "name": "Lil Elly Degens #7",
+        "image_hash": "4340b4af9f85d7cb9aab62c55ca64b711924bc9b36716b20853353961ec6e64a",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/7.jpg",
+        "metadata_hash": "20541f545cd1320381f1cc7b92f937e75bfcc1f5f67bd5e41b7b872e4f9191cd",
+        "metadata_link": "https://gateway.irys.xyz/GLReuJWWcZGYmDayjL3EpGqtLGS1zvVjRqWtjC11fKnq",
+        "onChain": true
+      },
+      "8": {
+        "name": "Lil Elly Degens #8",
+        "image_hash": "2b5e13ecce1eb3ba90329ff9c82ac8733154906df6b1a4c3f702aa326760da7d",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/8.jpg",
+        "metadata_hash": "295320d71f6bebe85e009c14ccd87f1a8be6bc8a5976368cea5ec6fe1168f205",
+        "metadata_link": "https://gateway.irys.xyz/2BrFkxySgB6fZNhr5GvEk13D34tnycgdstS7weEKfT8V",
+        "onChain": true
+      },
+      "9": {
+        "name": "Lil Elly Degens #9",
+        "image_hash": "c5d5d08c456d275834c29afb7315e812df8f3393d5abd6a82e234a22144bd2f7",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/9.jpg",
+        "metadata_hash": "e2e01073b85eea6d18feda61e93fc6b82f96c56464dd60b5317428e271655f09",
+        "metadata_link": "https://gateway.irys.xyz/EqrHeNiGSpeQYGN3b8gBpaFbu4JtE7Aip8paNSaoubWJ",
+        "onChain": true
+      },
+      "10": {
+        "name": "Lil Elly Degens #10",
+        "image_hash": "751c715e7c282015173a8da28c0b2b41b58ee5af368a222529a37dc4793f8c63",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/10.jpg",
+        "metadata_hash": "18bb2138d9cfbaac10cc99e1b1b851cabf0d2dde5f79a9bb13148d1e46c3158d",
+        "metadata_link": "https://gateway.irys.xyz/ARtMBANdGvRnEFChDVeq4im7FCnr9DAFymiAYdN6BCm6",
+        "onChain": true
+      },
+      "11": {
+        "name": "Lil Elly Degens #11",
+        "image_hash": "067bce61c730361a2ae1feea8460f5f7eda95bb745430967da204ee79af85ad4",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/11.jpg",
+        "metadata_hash": "06dd8d505d3e5bb450e755dca9936028b19ca39f83469ee834e4b7a8453e8502",
+        "metadata_link": "https://gateway.irys.xyz/4Lj1tR6jftHnAgQX6QzSPZSHfuQ4YGXHvwd3R92PicQe",
+        "onChain": true
+      },
+      "12": {
+        "name": "Lil Elly Degens #12",
+        "image_hash": "9bcfd320277a683b9fa5ec85e9c1f8af45f690387c2ad223e2f5670370b669e9",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/12.jpg",
+        "metadata_hash": "941bad6a24b62f02b5f3ec3c1b620413d3609b2c5e1fb88e94fa9efb3fb029a9",
+        "metadata_link": "https://gateway.irys.xyz/3kQbhrUWoAWwbzi2aCPjt2NaoW6CjUM522JWUqgRvkVB",
+        "onChain": true
+      },
+      "13": {
+        "name": "Lil Elly Degens #13",
+        "image_hash": "6b0598c3c6ea4568cec7d74dd99e0c5384976ae6da2dcb79418e0e76e4b603f3",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/13.jpg",
+        "metadata_hash": "b0b75bac2eb304fcb254884b0813dff53e41c6be7ad18c34124d2f707ac20ace",
+        "metadata_link": "https://gateway.irys.xyz/26FTwqLgmwPnwdrtkLRDss6yAqUrWwdunqULmCmxqLNv",
+        "onChain": true
+      },
+      "14": {
+        "name": "Lil Elly Degens #14",
+        "image_hash": "983671dadb6d7d85f2d9c1c903e7313c264b38f21f3e8eb2244318f984cec414",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/14.jpg",
+        "metadata_hash": "d2675f081c808e9fa12b12c50c0ef12bc1744c37472ce534f76875fdb49f62d2",
+        "metadata_link": "https://gateway.irys.xyz/6tPfyydPy5NoQ1SBL7wyEEo62kQhBxqw8NjkS6qYQXXT",
+        "onChain": true
+      },
+      "15": {
+        "name": "Lil Elly Degens #15",
+        "image_hash": "a16189409c4ac9668983cb136cc593ca13a0a24985606b92405669a04f502ca8",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/15.jpg",
+        "metadata_hash": "b324f07d87195d8a0de816415a7816af710165f65aa6f63643401dba73b51e82",
+        "metadata_link": "https://gateway.irys.xyz/ESw8YP6tPhFwHUUvKZf9fkcFuHc9PVtV9VKX2fk2nrrE",
+        "onChain": true
+      },
+      "16": {
+        "name": "Lil Elly Degens #16",
+        "image_hash": "12201edf5e6d632a3920d03f8c435609bcb9111f4dc2f40d9b5ec24d71cf2f5a",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/16.jpg",
+        "metadata_hash": "a4603f1ab711ffe811c19ea86c75af9626d3cf3ca7439466b99e7defcbcdcc58",
+        "metadata_link": "https://gateway.irys.xyz/GP9NVvqrLHigTwoBzC7KbAMLjaXqP9pPdpjuXAzfTN3a",
+        "onChain": true
+      },
+      "17": {
+        "name": "Lil Elly Degens #17",
+        "image_hash": "f858755f2be72910ca8c86db62eb4f0ac2375d8ce7cf32670f205e2cb68299a6",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/17.jpg",
+        "metadata_hash": "c57c0bfeda7aa2f90140385a3e72515b9a6808afbdf8b613f50ef990048a8661",
+        "metadata_link": "https://gateway.irys.xyz/HuWEnRBSBB3yDbfrpLT4W3ovq3tZMKMTYBGQCwQpBEUV",
+        "onChain": true
+      },
+      "18": {
+        "name": "Lil Elly Degens #18",
+        "image_hash": "4ded1f24c6574e6b0b12d3c66cedcd9e66a5c8f4dd0f03ce2a75bd812a5a03af",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/18.jpg",
+        "metadata_hash": "da566aa10e403b617fb14137e27db9ac1ec9566128a992f5864f868d28975237",
+        "metadata_link": "https://gateway.irys.xyz/2aDTocnzhpm7R9kWMbiXMWoPNVvi1vSBo4RgRB4FdUGf",
+        "onChain": true
+      },
+      "19": {
+        "name": "Lil Elly Degens #19",
+        "image_hash": "5c34f06b230b95773fef2be8b1cd0ffcfbcaac5c147193039dbdc44fab49a421",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/19.jpg",
+        "metadata_hash": "ef4a195f11cfebe528568fc52e2a5f6b174f09dd4fc6bcdb606c8321c9edb380",
+        "metadata_link": "https://gateway.irys.xyz/DF1AHy9vALJRLNE9eFUr1oKuGRu347nxmKbPiHo6ewSq",
+        "onChain": true
+      },
+      "20": {
+        "name": "Lil Elly Degens #20",
+        "image_hash": "d0fbe99d035518b60d52c745331fd68f8e54f546b0d9d4ab65db74004fd0c266",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/20.jpg",
+        "metadata_hash": "7d7b1f1ef63cc3770b5303a95462a014898dc279485ce31ad981e1b7aa679af8",
+        "metadata_link": "https://gateway.irys.xyz/JDzopQoaTEg1TzmDRitpi8CZgaUnrc8EDdR9TKBYLXVg",
+        "onChain": true
+      },
+      "21": {
+        "name": "Lil Elly Degens #21",
+        "image_hash": "0fe089dbc088a0937a8f489eabc8cb5d025c7dc15ecde9be26c1f50928d195a3",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/21.jpg",
+        "metadata_hash": "1a9f30fcdfb830803f0a3131ef2ee4fec0ba1811d1cefa2f4c04f2ff9098a6d5",
+        "metadata_link": "https://gateway.irys.xyz/H33ENr5iNi24bonREK2C7f2pZ2p5MmX9kpvH3GRtUpb4",
+        "onChain": true
+      },
+      "22": {
+        "name": "Lil Elly Degens #22",
+        "image_hash": "531ab9c98383466fb5e497bc878871648f3d2536ab3c9465eda70a7687192b5f",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/22.jpg",
+        "metadata_hash": "4091285101d84f64966f3551690814fe76ebdd1b416ab0a534bcf10153e5ecd0",
+        "metadata_link": "https://gateway.irys.xyz/2fS39t4Dt6uQstpU1D7xgGN5LzQaMt26MqmuUkkCxfMR",
+        "onChain": true
+      },
+      "23": {
+        "name": "Lil Elly Degens #23",
+        "image_hash": "a461f27cfb935b6b994ee74ac97362e71025b5cd554059a9e56804daad76fa92",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/23.jpg",
+        "metadata_hash": "447c294e20a68436fe67467e38e91c74bdd6cd404c1c76b0515a39b1f5412184",
+        "metadata_link": "https://gateway.irys.xyz/4DsEz687UxeGRDa6g3bF82U9oNabo9xi1iSkjJ6sFYa5",
+        "onChain": true
+      },
+      "24": {
+        "name": "Lil Elly Degens #24",
+        "image_hash": "26895cd6c043a49e84dd5b176a6ee72709366781dd5c5098fa0b3744db718dd3",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/24.jpg",
+        "metadata_hash": "72f180a7b81cd9caa75d25d19a5803e6e0a1f4e0474c007b0cac41447534b2cf",
+        "metadata_link": "https://gateway.irys.xyz/2C9iQ2RThczhZUemEzMnQ2z4PjNLfqdQrTSeUJwUbUCA",
+        "onChain": true
+      },
+      "25": {
+        "name": "Lil Elly Degens #25",
+        "image_hash": "9e749d6ccb122738768edc0f7ac8c21c21d7b38f0d94a6cb22313be686399352",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/25.jpg",
+        "metadata_hash": "9efa29299ff6a8e47c3f40fb50e237f4cd126adeccf915f992a03d962977d904",
+        "metadata_link": "https://gateway.irys.xyz/ERZ5D61asKbKfLTjbgmdSNpsXcczrJP7rRhhbGbJvwk2",
+        "onChain": true
+      },
+      "26": {
+        "name": "Lil Elly Degens #26",
+        "image_hash": "976c295edf809087f48ed62feb69e9bb0ffbbfda36e1b82127b4a61e2966f496",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/26.jpg",
+        "metadata_hash": "d5d4a21fdfca04ecb90c01210efd1036599f5b004c7f6156dad9ef242c1ecd39",
+        "metadata_link": "https://gateway.irys.xyz/E1VX8YzWehkXAfXsHgfCtkfXtS7HwpnjUMzq48wPbkyn",
+        "onChain": true
+      },
+      "27": {
+        "name": "Lil Elly Degens #27",
+        "image_hash": "5ced13feae0ee118475a3c6664a2ba378b53b2c69730c5b8e973d66271fe7e5f",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/27.jpg",
+        "metadata_hash": "99aa691b4c9a3ebc6bf7cf6bedb3103c9b9942089896ca687b0c99e57587b4c2",
+        "metadata_link": "https://gateway.irys.xyz/D6ZnQfuZd1CgC1EBSKgWwJDHg2oGVjWDnnbP9MdVhWKZ",
+        "onChain": true
+      },
+      "28": {
+        "name": "Lil Elly Degens #28",
+        "image_hash": "8f43d53bad96e389e7ff51b2614b8dcab2d627c64fac2a5d4f7ead505d447250",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/28.jpg",
+        "metadata_hash": "32c7c92c0e91c657b1f72fd9c5138bb87d6146f4fd8e1372a2459b352cfeda59",
+        "metadata_link": "https://gateway.irys.xyz/AKqwS9JFoQKNkh6nAswvrCc7Q3SFCphAoZzDnyQ8bdtv",
+        "onChain": true
+      },
+      "29": {
+        "name": "Lil Elly Degens #29",
+        "image_hash": "1317f87d361b636cf4c3b7c238b78413631c6261b8547acea83a39b5682ab762",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/29.jpg",
+        "metadata_hash": "da04a06b57d2bd0b5fb2b54b83b08c0693a3256f1499d7b6f2b95c076bfed5aa",
+        "metadata_link": "https://gateway.irys.xyz/6TsEztFof5FrNjHD3hPa8X6fzD83dX5vtKFvw7nRNWBL",
+        "onChain": true
+      },
+      "30": {
+        "name": "Lil Elly Degens #30",
+        "image_hash": "2d788f5a02848e5dc436417ab5db78e0ad3258951812ede23c01ede5438bd7cb",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/30.jpg",
+        "metadata_hash": "34037a6e29762cce2a273a1b08371b9c4c09542d7367c48758f94cf74a15b029",
+        "metadata_link": "https://gateway.irys.xyz/FLDUSnMF86dnprn3wkLn3zQFhmxUGrBZe3JhfhCjPnZQ",
+        "onChain": true
+      },
+      "31": {
+        "name": "Lil Elly Degens #31",
+        "image_hash": "1f3a863c338a60a4ce055e8a482e8bfeb6892f20560c63c649eb836d84cf92ef",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/31.jpg",
+        "metadata_hash": "4bf106d36747c7410e923bd9c51aa8337d8c5b9ac4372db73c665a00d84f830e",
+        "metadata_link": "https://gateway.irys.xyz/SK2mWLZ7Yr94uYhBQaZJXYG8CG6DDPeRy9sswKx5QJk",
+        "onChain": true
+      },
+      "32": {
+        "name": "Lil Elly Degens #32",
+        "image_hash": "fc5d492bf16eae3802d23d59989682175097aceb704dbf641530ab5c7f8fb4b7",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/32.jpg",
+        "metadata_hash": "a05ec1b656354af87ba821331ea8f2a6df9b5f9e41df8637e05f63abb0f8297b",
+        "metadata_link": "https://gateway.irys.xyz/DreUdngAARouzG7GeFqvnuUk2WgPxqPSL35K7z4Jy4wJ",
+        "onChain": true
+      },
+      "33": {
+        "name": "Lil Elly Degens #33",
+        "image_hash": "e5fb2001379ddcd8c167f72f689afad3347a76b15a104193856f1fdf1b03dc18",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/33.jpg",
+        "metadata_hash": "5624aa96245971e53a7ee4c1b8095b47d9f378d0a01a6b86a35849c18f342c47",
+        "metadata_link": "https://gateway.irys.xyz/GLvVd9C1V1rbZKrdqzp5urX1oKt2GwrGMABUNRy61oDx",
+        "onChain": true
+      },
+      "34": {
+        "name": "Lil Elly Degens #34",
+        "image_hash": "1e0a91910622c06f512c4e7b2cbf575facedc46b4d0442b7122fe5e04f61ba51",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/34.jpg",
+        "metadata_hash": "10b118a361280ac44910ff3f6b51760903e9f52910c264088dae8a6a919d9260",
+        "metadata_link": "https://gateway.irys.xyz/ARjWkVJyGKfRgG5VsPEizRt6HM2bcnDohTk7YFSyYFtV",
+        "onChain": true
+      },
+      "35": {
+        "name": "Lil Elly Degens #35",
+        "image_hash": "84acabaa54a4f52cf9ce06d9372704de4a5ae8a3767d9f0039b24b2a8b63cd03",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/35.jpg",
+        "metadata_hash": "0bac4bf6713ff65adfa69584bd78e2b5445d92e169f6268432b44345d16f420b",
+        "metadata_link": "https://gateway.irys.xyz/5sWaghaMp8XaLPmqubrGXm6ein8LHkb8Vz1nvyjoz6an",
+        "onChain": true
+      },
+      "36": {
+        "name": "Lil Elly Degens #36",
+        "image_hash": "7eca0c3ccdd123668e3f3d90a22212da3c607273d048b0c2b2a5a8a19b8050ed",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/36.jpg",
+        "metadata_hash": "9f0e03da557f94e3e452364c8628d79747e9e7241f4f568a78d94ac97ebf0059",
+        "metadata_link": "https://gateway.irys.xyz/AGY79mDi28R9zaupfnS6gaqG9KLE7xLH42rkkyourxwe",
+        "onChain": true
+      },
+      "37": {
+        "name": "Lil Elly Degens #37",
+        "image_hash": "2ba12b16c2d14aaccfab80614552a23a9bfa637d41a655d17e8adfeb050d9841",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/37.jpg",
+        "metadata_hash": "b62628426be640d915dfd6c46ee66da7ee455fbf36c6aa26216636c2b040bbef",
+        "metadata_link": "https://gateway.irys.xyz/5crN2uuTsBf76qPaPs1ZKB92PZE25XFxdhMLYTw9Ddvz",
+        "onChain": true
+      },
+      "38": {
+        "name": "Lil Elly Degens #38",
+        "image_hash": "0ddf7b2df340c7a85d2a112c9f1467c31cec918f653ae165f92d9d8a167d1e01",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/38.jpg",
+        "metadata_hash": "aba36a7ea613575f7ec73b45d2aec44c5f17b9bada85ba9bcfaffc40aff6f207",
+        "metadata_link": "https://gateway.irys.xyz/GYmX4xjgLUkV9YuLcducGm1MeuFJStJj5jMhi3apDM8C",
+        "onChain": true
+      },
+      "39": {
+        "name": "Lil Elly Degens #39",
+        "image_hash": "abdce7cf60c4ba4a1e806307a6b205b54564ee6e41806d38f8a8df6d19f9a7db",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/39.jpg",
+        "metadata_hash": "b7d7b766b634522a8b4a0ac7c45f644b8290198dced0fe9c120f2bf239c716e2",
+        "metadata_link": "https://gateway.irys.xyz/HVdRjDcwC5Lew9fWe2JNE95JqHUgF3ZpVeoknae3qroE",
+        "onChain": true
+      },
+      "40": {
+        "name": "Lil Elly Degens #40",
+        "image_hash": "46fc3c451826befda115d963ac3c5251b61523b8e7b3f45f016cd00d23e378ac",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/40.jpg",
+        "metadata_hash": "b60dd4da8f41a8b00b46c0a05c35968aa9803ccd82510b2a4a5b668a83c6d0e2",
+        "metadata_link": "https://gateway.irys.xyz/6Divtkota5uooFJiAHqXqahaiUCHSDQjQLJWwSYXHo2Q",
+        "onChain": true
+      },
+      "41": {
+        "name": "Lil Elly Degens #41",
+        "image_hash": "290ab4eb3f3c2579489ffd25c041d37cac5aaebed00dd8f567576882266596ba",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/41.jpg",
+        "metadata_hash": "d6f4b72c6b329cbceeb171f501e155f198ef72364e602a08b2297a2d9cd3ce78",
+        "metadata_link": "https://gateway.irys.xyz/8n3EstpNSuFABcSnZ1uE6GpaqfZzZwmXYxUMEjG7mQLA",
+        "onChain": true
+      },
+      "42": {
+        "name": "Lil Elly Degens #42",
+        "image_hash": "4c4e0d08bebcc51e57569334c4eb3cff8cd551a15fc65849734dab72701cc23c",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/42.jpg",
+        "metadata_hash": "9c67dc40be583a4935734483f7d5937d4552c42e7ae9e4a152e37d2762333c8b",
+        "metadata_link": "https://gateway.irys.xyz/BoAofRmM5ACsKJrRJRCxWmgA5wY1UeXNLCVZ95tfCeSR",
+        "onChain": true
+      },
+      "43": {
+        "name": "Lil Elly Degens #43",
+        "image_hash": "ddd6b01acabfa0acb414f807a8753a7e54f8a679b4b72c59fe902106653f011c",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/43.jpg",
+        "metadata_hash": "868cf898bbf17ea6f29f53b3522dfd9a4aaa6c1a6b558e8fa7c093e22a6ebd56",
+        "metadata_link": "https://gateway.irys.xyz/AopBnLGrKBAUvGd7mC4nNaaZAvqU8qDLtn2k1yRTErM2",
+        "onChain": true
+      },
+      "44": {
+        "name": "Lil Elly Degens #44",
+        "image_hash": "d0cfaa129dbfd1b46f0c40ab63430147921ad3cf9f10a5737aabaa39e899287f",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/44.jpg",
+        "metadata_hash": "3ed21db8c066d60f040422c40de8cb298d0c024c527d211d6f41e4de41d717e5",
+        "metadata_link": "https://gateway.irys.xyz/FBQ6GsMeZSomMUptMLWjQMpbnf9BoF4ZRZd5Rc4dt3F5",
+        "onChain": true
+      },
+      "45": {
+        "name": "Lil Elly Degens #45",
+        "image_hash": "cb333d6c74275a68345841108d0ae8c82b780859d296eff03553103fb9115356",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/45.jpg",
+        "metadata_hash": "07d2a1d42ea6b2bc19b844bbfd5e1a370a6ff408fcd3cd161c9f6a7e9efa183f",
+        "metadata_link": "https://gateway.irys.xyz/4K7vfZiRwxY3ey8xa9iKmcm5aftA3g9DAkLELJaXD6mM",
+        "onChain": true
+      },
+      "46": {
+        "name": "Lil Elly Degens #46",
+        "image_hash": "3663f5e7a65c4b54f7b4315538ac683ec45686a263bef9d145888dd5f43a2128",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/46.jpg",
+        "metadata_hash": "b535da20a84697aebacb925de141e7910c462434a52c485b6ae5969f23eb2d9d",
+        "metadata_link": "https://gateway.irys.xyz/UjBQxJDy7KnXuZrx3E4qBZnCFdjd9kczEwvskKcDt8C",
+        "onChain": true
+      },
+      "47": {
+        "name": "Lil Elly Degens #47",
+        "image_hash": "868a189ba2b4c0e473907c8269735987372e134e149df55e7d8cae2e51da98c3",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/47.jpg",
+        "metadata_hash": "a92e709c3cf997882205b1f534e166dc96f7ab36eb1504bf67c0db61929ccabe",
+        "metadata_link": "https://gateway.irys.xyz/94auxcFBCi2d5bdV6j137TBC5wfgSRoWEkwFGXffLd15",
+        "onChain": true
+      },
+      "48": {
+        "name": "Lil Elly Degens #48",
+        "image_hash": "36f32f4a8cd26fa8ee91bb874f0ee57d5162962ae3029560a4438dfd9ad93717",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/48.jpg",
+        "metadata_hash": "3c2372cdf40b68f63b65b3a10bbf5008bb8b3b23ccdfb62786b69660c871bc4c",
+        "metadata_link": "https://gateway.irys.xyz/2L2aDHg31CZwTZPL4YTU3G2Zfs5aCAkhd13AwiY1Mcyh",
+        "onChain": true
+      },
+      "49": {
+        "name": "Lil Elly Degens #49",
+        "image_hash": "a9bed436e59c94f91dd68948c32a3fc643e737e7626b4ffd782e3f95ea5de7dd",
+        "image_link": "https://gateway.lighthouse.storage/ipfs/bafybeidzvfmg7mqc3yfmq7xuqgq7biklur2esmcfusuyy3bhvxf5v2doae/49.jpg",
+        "metadata_hash": "ae9f3053f9a98829b084f444fc640f465e484614255361211b74d8234d675b8c",
+        "metadata_link": "https://gateway.irys.xyz/BuPjnjUrkNstE5uRdx1SRbKF9Z5kkNE3HQVQXrV3nhp5",
+        "onChain": true
+      }
+    }
+  }

@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.rodal-dialog {
+  height: fit-content !important;
+  background-color: #101316 !important;
+  width: 450px !important;
+}
+
+.rodal-mask {
+  position: absolute;
+  background: rgba(11, 11, 16, 0.6) !important;
+  transition: all 0.3s;
+}
+
+.css-1dqn1ka {
+  display: grid;
+  gap: var(--chakra-space-5);
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  margin-top: 15px;
+}
+
+.css-1k53b0b {
+  border-radius: 5px;
+  width: 120px;
+  min-height: 50px;
+}
+
+.css-1k53b0b {
+  background-color: #21192a !important;
+}
+
+.css-tl3ftk {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.csax {
+  margin-bottom: 52px;
+}
+
+.nft-image-wrapper {
+  min-height: 370px;
+}
+
+.loader {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #e42575; /* The color of the ring */
+  border-top: 6px solid transparent; /* The "empty" part of the ring */
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Grid of cards */
+.ggridd {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 16px;
+  justify-content: start;
+}
+
+/* Each card’s background image */
+.image-stake {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* keep it square */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* The “Unstake” bar at the bottom */
+.image-stake .unstake {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* The spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.full-bg-page {
+  background-image: url("/hero.jpg");
+  background-size: cover;
+  /* background-position: center; */
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+.full-stake-bg {
+  background-image: url("/back.png");
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+.machine-text {
+  font-family: "Comic Relief", system-ui;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+}
+.gradient-border-box {
+  position: relative;
+  border-top: 4px solid #833497;
+}
+
+.gradient-border-box::before,
+.gradient-border-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, #833497, transparent);
+}
+
+.gradient-border-box::before {
+  left: 0;
+}
+
+.gradient-border-box::after {
+  right: 0;
+}
+
+:root {
+  --border-width: 5px;
+  --top-color: #833497;
+  --middle-color: #53d126;
+}
+
+.gradient-border-container {
+  position: relative;
+  background: linear-gradient(
+        to bottom,
+        var(--top-color),
+        var(--middle-color) 50%,
+        transparent
+      )
+      left top no-repeat,
+    linear-gradient(
+        to bottom,
+        var(--top-color),
+        var(--middle-color) 50%,
+        transparent
+      )
+      right top no-repeat,
+    linear-gradient(to right, var(--top-color), var(--top-color)) top left
+      no-repeat;
+  background-size: var(--border-width) 100%, var(--border-width) 100%,
+    100% var(--border-width);
+  padding: var(--border-width);
+}
+
+.gradient-border-content {
+  background: white;
+  height: 100%;
+}
+
+.css-only-border {
+  position: relative;
+  border-top: var(--border-width) solid #833497;
+  border-radius: 8px;
+  overflow: hidden; /* Clips ::before and ::after to the radius */
+}
+
+.css-only-border::before,
+.css-only-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: var(--border-width);
+  background: linear-gradient(to bottom, #833497, #53d126 50%, transparent);
+}
+
+.css-only-border::before {
+  left: 0;
+}
+
+.css-only-border::after {
+  right: 0;
+}
+
+.css-border {
+  position: relative;
+  border-top: var(--border-width) solid #833497;
+  border-radius: 8px;
+  overflow: hidden; /* Clips ::before and ::after to the radius */
+}
+
+.css-border::before,
+.css-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: var(--border-width);
+  background: linear-gradient(to bottom, #833497, transparent);
+}
+
+.css-border::before {
+  left: 0;
+}
+
+.css-border::after {
+  right: 0;
+}
+.wallet-adapter-button-trigger {
+  background-color: #32133a !important;
+  border: none !important;
+  border-top: 2px solid #833497 !important;
+  border-radius: 10px !important;
+}

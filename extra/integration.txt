@@ -1,0 +1,227 @@
+DEPLOYED SMART CONTRACTS DETAILS
+
+1) Lucky Elephant Club Proxy NFT Contract
+
+Contract Address:-
+0x42de23cc51A8425C248C9801395DD47BD1996152
+
+Contract On Etherscan:- 
+https://etherscan.io/address/0x42de23cc51a8425c248c9801395dd47bd1996152#code
+
+2) Yield Token Contract (IPNUT Token yield)
+
+Contract Address:-
+0xd6eb4830f5c278E017c0F0aab59c7a51140Ec7EF
+
+Contract On Etherscan:- 
+https://etherscan.io/address/0xd6eb4830f5c278E017c0F0aab59c7a51140Ec7EF#code
+
+
+5) Yield Hub Contract ( Reward Distribution)
+
+Contract Address:-
+0x1CfC6779e093f3a6779eB430D5af220a2c10Faa3
+
+Contract On Etherscan:- 
+https://etherscan.io/address/0x1CfC6779e093f3a6779eB430D5af220a2c10Faa3#code 
+
+
+## Lucky Jungle Hub Integration Guide
+
+### Overview
+This document provides a detailed guide to integrate the Lucky Jungle Hub with the existing smart contracts. The key components include displaying user balances, minting NFTs, and managing rewards. The following smart contracts are used:
+- LEC NFT Contract
+- PNUT ERC20 Token
+- Yield Hub Reward Distribution
+
+### Layout
+
+**Main Dashboard:**
+- Available Balance (ETH and PNUT)
+- Total LEC NFTs
+- NFTs Owned
+- Daily Earnings (PNUT)
+- PNUT Price
+- Total Rewards (PNUT)
+- Total Value Locked
+- My PNUT Balance
+
+**NFT Section:**
+- Display NFT details
+- Claim rewards for each NFT
+
+**Minting Section:**
+- Public minting interface
+- Whitelist minting interface
+
+### Smart Contract Functions
+
+#### 1. Available Balance
+
+**ETH Balance:**
+- **Function:** `web3.eth.getBalance(address)`
+- **Description:** Fetch the ETH balance of the user's address.
+
+**PNUT Balance:**
+- **Contract:** PNUT ERC20 Token
+- **Function:** `balanceOf(address account)`
+- **Description:** Fetch the PNUT balance of the user's address.
+```javascript
+PNUTContract.methods.balanceOf(userAddress).call().then(console.log);
+```
+
+#### 2. Total LEC NFTs and NFTs Owned
+
+**Total LEC NFTs:**
+- **Contract:** LEC NFT
+- **Function:** `totalSupply()`
+- **Description:** Fetch the total supply of LEC NFTs.
+```javascript
+LECNFTContract.methods.totalSupply().call().then(console.log);
+```
+
+**NFTs Owned:**
+- **Contract:** LEC NFT
+- **Function:** `balanceOf(address owner)`
+- **Description:** Fetch the number of NFTs owned by the user.
+```javascript
+LECNFTContract.methods.balanceOf(userAddress).call().then(console.log);
+```
+
+#### 3. Daily Earnings (PNUT)
+- **Contract:** Yield Hub
+- **Function:** `getDailyEarnings(address account)` (if exists)
+- **Description:** Fetch the daily earnings of PNUT tokens for the user.
+
+#### 4. Total Rewards (PNUT)
+- **Contract:** Yield Hub
+- **Function:** `getTotalRewards(address account)` (if exists)
+- **Description:** Fetch the total rewards of PNUT tokens for the user.
+
+#### 5. PNUT Price
+- **External API:** Use a price feed or API like CoinGecko to fetch the current price of PNUT tokens.
+```javascript
+fetch('https://api.coingecko.com/api/v3/simple/price?ids=pnut-token-id&vs_currencies=usd') (live contract still not deployed)
+  .then(response => response.json())
+  .then(data => console.log(data));
+```
+
+#### 6. Total Value Locked
+- **Calculation:** Sum the value of all staked PNUT tokens based on their current market value.
+
+#### 7. Claim Rewards
+
+**Claim PNUT Rewards:**
+- **Contract:** Yield Hub
+- **Function:** `claimRewards()`
+- **Description:** Claim accumulated PNUT rewards for the user.
+```javascript
+YieldHubContract.methods.claimRewards().send({ from: userAddress }).then(console.log);
+```
+
+**Claim NFT Rewards:**
+- **Contract:** LEC NFT
+- **Function:** `claimRewards(uint256 tokenId)` (if exists)
+- **Description:** Claim rewards for a specific NFT.
+```javascript
+LECNFTContract.methods.claimRewards(tokenId).send({ from: userAddress }).then(console.log);
+```
+
+#### 8. Fetch NFT Details
+
+**Fetch NFT Details:**
+- **Contract:** LEC NFT
+- **Function:** `tokenURI(uint256 tokenId)`
+- **Description:** Fetch metadata URI for a specific NFT.
+```javascript
+LECNFTContract.methods.tokenURI(tokenId).call().then(console.log);
+```
+
+**Fetch NFT Earnings:**
+- **Contract:** Yield Hub
+- **Function:** `getDailyEarningsForNFT(uint256 tokenId)` (if exists)
+- **Description:** Fetch the daily earnings of a specific NFT.
+```javascript
+YieldHubContract.methods.getDailyEarningsForNFT(tokenId).call().then(console.log);
+```
+
+### Minting Functions
+
+**Public Mint:**
+- **Contract:** LEC NFT
+- **Function:** `publicMint(address _recipient, uint256 _mintAmount)`
+- **Description:** Mint new NFTs to the recipient address.
+```javascript
+LECNFTContract.methods.publicMint(userAddress, mintAmount).send({ from: userAddress, value: mintPrice }).then(console.log);
+```
+
+**Whitelist Mint (Lucky List):**
+- **Contract:** LEC NFT
+- **Function:** `whitelistMintLuckyList(uint256 _mintAmount, bytes32[] _merkleProof)`
+- **Description:** Mint new NFTs using a whitelist for Lucky List members.
+```javascript
+LECNFTContract.methods.whitelistMintLuckyList(mintAmount, merkleProof).send({ from: userAddress, value: mintPrice }).then(console.log);
+```
+
+**Whitelist Mint (OGs):**
+- **Contract:** LEC NFT
+- **Function:** `whitelistMintOGs(uint256 _mintAmount, bytes32[] _merkleProof)`
+- **Description:** Mint new NFTs using a whitelist for OG members.
+```javascript
+LECNFTContract.methods.whitelistMintOGs(mintAmount, merkleProof).send({ from: userAddress, value: mintPrice }).then(console.log);
+```
+
+### Supporting Functions
+
+**Mint Price:**
+- **Contract:** LEC NFT
+- **Function:** `_price(uint256)`
+- **Description:** Get the price for minting NFTs.
+```javascript
+LECNFTContract.methods._price().call().then(console.log);
+```
+
+**Max Mint Per Address:**
+- **Contract:** LEC NFT
+- **Function:** `_maxMintPerAddress(uint256)`
+- **Description:** Get the maximum number of NFTs that can be minted per address.
+```javascript
+LECNFTContract.methods._maxMintPerAddress().call().then(console.log);
+```
+
+**Max Supply:**
+- **Contract:** LEC NFT
+- **Function:** `_maxSupply(uint256)`
+- **Description:** Get the maximum supply of NFTs.
+```javascript
+LECNFTContract.methods._maxSupply().call().then(console.log);
+```
+
+**Minted NFTs:**
+- **Contract:** LEC NFT
+- **Function:** `_minted(uint256)`
+- **Description:** Get the number of NFTs minted.
+```javascript
+LECNFTContract.methods._minted().call().then(console.log);
+```
+
+### Connecting the UI to Smart Contracts
+
+1. **Initialize Web3 and Contracts:**
+   - Initialize Web3 instance and contract instances using the provided ABI and contract addresses.
+
+2. **Fetch and Display User Balances:**
+   - Use the functions to fetch ETH and PNUT balances and display them on the dashboard.
+
+3. **Fetch and Display NFT Information:**
+   - Fetch total LEC NFTs, NFTs owned by the user, and NFT details using the functions listed above.
+
+4. **Fetch and Display Earnings and Rewards:**
+   - Fetch daily earnings and total rewards for the user and display them on the dashboard.
+
+5. **Integrate Minting Functions:**
+   - Implement the public minting and whitelist minting interfaces using the respective functions.
+
+6. **Claim Rewards:**
+   - Implement functionality to claim PNUT and NFT rewards using the provided functions.
+
