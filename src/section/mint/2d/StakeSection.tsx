@@ -423,23 +423,23 @@ active:scale-95 border-t-2 border-[#833497]`}
               className="relative z-20 top-[150px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar"
             >
               <NFTCardComponent
-                imageUrl="/Screenshot_1.png"
+                imageUrl="/teaser.jpg"
                 onLunchBreakClick={openModal}
               />
               <NFTCardComponent
-                imageUrl="/Screenshot_2.png"
+                imageUrl="/teaser.jpg"
                 onLunchBreakClick={openModal}
               />
               <NFTCardComponent
-                imageUrl="/Screenshot_3.png"
+                imageUrl="/teaser.jpg"
                 onLunchBreakClick={openModal}
               />
               <NFTCardComponent
-                imageUrl="/Screenshot_4.png"
+                imageUrl="/teaser.jpg"
                 onLunchBreakClick={openModal}
               />
               <NFTCardComponent
-                imageUrl="/Screenshot_1.png"
+                imageUrl="/teaser.jpg"
                 onLunchBreakClick={openModal}
               />
             </div>
@@ -455,23 +455,23 @@ active:scale-95 border-t-2 border-[#833497]`}
 
           <div className="md:!hidden relative z-20 top-[150px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar">
             <NFTCardComponent
-              imageUrl="/Screenshot_1.png"
+              imageUrl="/teaser.jpg"
               onLunchBreakClick={openModal}
             />
             <NFTCardComponent
-              imageUrl="/Screenshot_2.png"
+              imageUrl="/teaser.jpg"
               onLunchBreakClick={openModal}
             />
             <NFTCardComponent
-              imageUrl="/Screenshot_3.png"
+              imageUrl="/teaser.jpg"
               onLunchBreakClick={openModal}
             />
             <NFTCardComponent
-              imageUrl="/Screenshot_4.png"
+              imageUrl="/teaser.jpg"
               onLunchBreakClick={openModal}
             />
             <NFTCardComponent
-              imageUrl="/Screenshot_1.png"
+              imageUrl="/teaser.jpg"
               onLunchBreakClick={openModal}
             />
           </div>
@@ -511,23 +511,23 @@ active:scale-95 border-t-2 border-[#833497]`}
             className="relative z-20 top-[810px] lg:top-[500px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar"
           >
             <NFTCardComponent2
-              imageUrl="/Screenshot_1.png"
+              imageUrl="/teaser.jpg"
               onLunchBreakClick={openModal}
             />
             <NFTCardComponent2
-              imageUrl="/Screenshot_2.png"
+              imageUrl="/teaser.jpg"
               onLunchBreakClick={openModal}
             />
             <NFTCardComponent2
-              imageUrl="/Screenshot_3.png"
+              imageUrl="/teaser.jpg"
               onLunchBreakClick={openModal}
             />
             <NFTCardComponent2
-              imageUrl="/Screenshot_4.png"
+              imageUrl="/teaser.jpg"
               onLunchBreakClick={openModal}
             />
             <NFTCardComponent2
-              imageUrl="/Screenshot_1.png"
+              imageUrl="/teaser.jpg"
               onLunchBreakClick={openModal}
             />
           </div>
@@ -540,23 +540,23 @@ active:scale-95 border-t-2 border-[#833497]`}
         </div>
         <div className="md:!hidden relative z-20 top-[860px] lg:top-[500px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar">
           <NFTCardComponent2
-            imageUrl="/Screenshot_1.png"
+            imageUrl="/teaser.jpg"
             onLunchBreakClick={openModal}
           />
           <NFTCardComponent2
-            imageUrl="/Screenshot_2.png"
+            imageUrl="/teaser.jpg"
             onLunchBreakClick={openModal}
           />
           <NFTCardComponent2
-            imageUrl="/Screenshot_3.png"
+            imageUrl="/teaser.jpg"
             onLunchBreakClick={openModal}
           />
           <NFTCardComponent2
-            imageUrl="/Screenshot_4.png"
+            imageUrl="/teaser.jpg"
             onLunchBreakClick={openModal}
           />
           <NFTCardComponent2
-            imageUrl="/Screenshot_1.png"
+            imageUrl="/teaser.jpg"
             onLunchBreakClick={openModal}
           />
         </div>
