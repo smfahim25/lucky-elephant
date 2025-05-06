@@ -31,10 +31,21 @@ export default async function RootLayout({ children }) {
   // 1) Access request headers in Next.js for SSR
   const headersObj = await headers();
   const cookieString = headersObj.get("cookie") || "";
-  const pathname = headersObj.get("x-next-pathname") || "";
 
-  // Use pathname directly for route detection
-  const isStakeRoute = pathname.startsWith("/stake");
+  const referer = headersObj.get("referer") || "";
+
+  let currentPath = "";
+
+  try {
+    if (referer) {
+      const url = new URL(referer);
+      currentPath = url.pathname;
+    }
+  } catch (e) {
+    currentPath = headersObj.get("x-next-pathname") || "";
+  }
+
+  const isStakeRoute = currentPath.includes("/stake");
 
   return (
     <html lang="en">
