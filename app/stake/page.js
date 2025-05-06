@@ -45,6 +45,7 @@ export default function MintPageV1() {
                 draggable
                 pauseOnHover={false}
               />
+
               <Header solana />
 
               <StakeSection />

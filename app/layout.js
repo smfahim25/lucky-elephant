@@ -33,9 +33,8 @@ export default async function RootLayout({ children }) {
   const cookieString = headersObj.get("cookie") || "";
   const pathname = headersObj.get("x-next-pathname") || "";
 
-  const referer = headersObj.get("referer") || "";
-  const url = new URL(referer || "http://localhost");
-  const isStakeRoute = url.pathname.startsWith("/stake");
+  // Use pathname directly for route detection
+  const isStakeRoute = pathname.startsWith("/stake");
 
   return (
     <html lang="en">
