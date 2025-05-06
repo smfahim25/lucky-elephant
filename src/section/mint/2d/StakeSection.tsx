@@ -463,7 +463,7 @@ active:scale-95 border-t-2 border-[#833497]`}
             />
           </div>
 
-          <div className="mt-[90px] lg:mt-[0px] xl:mt-[-80px]">
+          <div className="mt-[90px] md:mt-[40px] lg:mt-[0px] xl:mt-[-80px]">
             <Image
               src="/belt.png"
               width={5000}
@@ -474,17 +474,21 @@ active:scale-95 border-t-2 border-[#833497]`}
           </div>
         </div>
         <div className="relative z-30 top-[500px]">
-          <Image
-            src="/line.jpg"
-            width={5000}
-            height={300}
-            alt="line"
-            unoptimized
-            className="hidden lg:block"
-          />
-          <p className="font-bold text-2xl xl:text-3xl font-['alphakind'] absolute left-[29%] lg:left-[40%] lg:right-0 lg:top-0 xl:top-1 top-[22.5rem]">
-            Your Ellys (46)
-          </p>
+          <div className="w-full">
+            <Image
+              src="/line.jpg"
+              width={5000}
+              height={300}
+              alt="line"
+              unoptimized
+              className="hidden lg:block w-full"
+            />
+          </div>
+          <div className="absolute top-[350px] md:top-[250px] lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <p className="font-bold text-2xl xl:text-3xl font-['alphakind'] text-center">
+              Your Ellys (46)
+            </p>
+          </div>
         </div>
         <div className="relative !hidden md:!block">
           <div className="relative z-20 top-[810px] lg:top-[500px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar">
