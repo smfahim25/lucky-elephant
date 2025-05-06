@@ -6,6 +6,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
+@font-face {
+  font-family: "alphakind"; /* Name you want to use to reference the font */
+  src: url("/Alphakind.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "lalezar"; /* Name you want to use to reference the font */
+  src: url("/lalezar.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "hyperspace"; /* Name you want to use to reference the font */
+  src: url("/hyperspace.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

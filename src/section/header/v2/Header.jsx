@@ -74,9 +74,9 @@ const Header = ({ solana }) => {
             <div className="bithu_menu_btns">
               {/* 3) On connect button click => Reown's `open()` */}
               {solana ? (
-                <>
+                <div className="">
                   <WalletMultiButtonDynamic className="text-[14px]" />
-                </>
+                </div>
               ) : (
                 <Button
                   size="sm"
@@ -90,13 +90,16 @@ const Header = ({ solana }) => {
 
               <button
                 // variant="outline"
-                className="text-md rounded-xl bg-[#32133a] px-3 py-3 font-bold text-white shadow-lg transition-all hover:from-purple-700 active:scale-95 border-t-2 border-[#833497]"
+                className="text-md rounded-xl bg-[#1e0a25] px-3 py-3 font-bold text-white shadow-lg transition-all hover:from-purple-700 active:scale-95 border-t-2 border-[#833497]"
                 onClick={handleMobileMenu}
               >
                 <img src={menuIcon.src} alt="menu bar icon" />
               </button>
             </div>
           </div>
+          {/* <div className=" xs:!hidden">
+            <WalletMultiButtonDynamic className="text-[14px]" />
+          </div> */}
         </div>
       </HeaderStyleWrapper>
 

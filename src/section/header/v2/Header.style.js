@@ -4,7 +4,6 @@ const HeaderStyleWrapper = styled.div`
   position: fixed;
   left: 0;
   top: 0;
-  padding: 0 40px;
   width: 100%;
   height: 110px;
   z-index: 11;
@@ -68,9 +67,6 @@ const HeaderStyleWrapper = styled.div`
         }
       }
     }
-  }
-  @media (max-width: 375px) {
-    padding: 15px;
   }
 `;
 

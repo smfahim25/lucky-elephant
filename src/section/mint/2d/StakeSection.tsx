@@ -1,6 +1,6 @@
 "use client";
 
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { AnchorProvider } from "@coral-xyz/anchor";
 import {
@@ -56,7 +56,13 @@ import {
 import { useUmi } from "@/utils/useUmi";
 import axios from "axios";
 import CoinInfoCounterWrapper from "../../counter/v1/Counter.style";
-import { Clock, FlaskRoundIcon as Flask, Gauge } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Clock,
+  FlaskRoundIcon as Flask,
+  Gauge,
+} from "lucide-react";
 import Image from "next/image";
 import NFTCardComponent from "./NFTCard";
 import NFTCardComponent2 from "./NFTCard2";
@@ -70,6 +76,10 @@ import {
 import Modals from "./Modal";
 
 const VERIFIED_COLLECTION = "GfvCGwrGQch2vegUXZkQm7up1N1jomwmLx6H5VQ92zTh";
+
+interface ScrollContainerRef {
+  current: HTMLDivElement | null;
+}
 
 export default function StakeSection() {
   const [provider, setProvider] = useState<AnchorProvider | null>(null);
@@ -104,11 +114,11 @@ export default function StakeSection() {
   >([]);
   const [stakedNfts, setStakedNfts] = useState<any[]>([]);
   const [rewardPerSecond, setRewardPerSecond] = useState(0);
-  const [ellysOnDuty, setEllysOnDuty] = useState("1234/7777");
+  const [ellysOnDuty, setEllysOnDuty] = useState("1237777");
   const [jarsProduced, setJarsProduced] = useState("152 M");
   const [isAnimating, setIsAnimating] = useState(false);
   const [counterValue, setCounterValue] = useState(152);
-  const degens = useMotionValue(6);
+  const degens = useMotionValue(60);
   const output = useMotionValue(10.4);
   const pending = useMotionValue(78.3);
 
@@ -216,12 +226,49 @@ export default function StakeSection() {
     });
   };
 
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+
+  type ScrollDirection = "left" | "right";
+
+  const scroll = (direction: ScrollDirection): void => {
+    const container: HTMLDivElement | null = scrollContainerRef.current;
+    if (container) {
+      const scrollAmount: number = 300; // Adjust as needed
+      const newScrollLeft: number =
+        direction === "left"
+          ? container.scrollLeft - scrollAmount
+          : container.scrollLeft + scrollAmount;
+
+      container.scrollTo({
+        left: newScrollLeft,
+        behavior: "smooth",
+      });
+    }
+  };
+  const scrollContainerRef2 = useRef<HTMLDivElement | null>(null);
+
+  const scroll2 = (direction: ScrollDirection): void => {
+    const container: HTMLDivElement | null = scrollContainerRef.current;
+    if (container) {
+      const scrollAmount: number = 300; // Adjust as needed
+      const newScrollLeft: number =
+        direction === "left"
+          ? container.scrollLeft - scrollAmount
+          : container.scrollLeft + scrollAmount;
+
+      container.scrollTo({
+        left: newScrollLeft,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       {/* <Particle /> */}
       <div className="full-stake-bg">
         <div className="full-bg-page h-[1000px]">
-          <div className="relative z-10 mx-auto max-w-[45rem] px-4 top-[100px]">
+          <div className="relative z-10 mx-auto max-w-[45rem] md:px-[1rem] top-[100px]">
             {/* Main Heading */}
             <h1
               className="text-center font-extrabold text-white machine-text"
@@ -231,50 +278,52 @@ export default function StakeSection() {
             </h1>
 
             {/* Subheading */}
-            <p className="text-center text-xl text-white">
+            <p className="text-center text-xl text-white font-['lalezar']">
               Send your Ellys to work and fuel the sweetest
               <br />
-              <span className="font-bold text-[#ffe400]">SPBUTTA</span> factory
-              on the blockchain.
+              <span className="font-bold text-[#ffe400]  font-['lalezar']">
+                $PBUTTA
+              </span>{" "}
+              factory on the blockchain.
             </p>
 
             {/* Stats Panel */}
             <div className="mt-6 rounded-xl bg-[#17031d] backdrop-blur-sm overflow-hidden max-w-2xl gradient-border-box">
               {/* Stats Header */}
-              <div className="grid grid-cols-3 text-center gap-3 p-3">
+              <div className="grid grid-cols-1 md:grid-cols-3 text-center gap-3 p-3">
                 <div className="p-4 bg-[#21062c] rounded-xl">
-                  <p className="text-sm font-bold text-[#ffe400] mb-2">
+                  <p className="text-lg font-bold text-[#ffe400] mb-2 font-['lalezar']">
                     Degens On Duty
                   </p>
                   <div className="flex justify-center items-center gap-2">
-                    <motion.p className="text-3xl font-bold text-white">
+                    <motion.p className="text-4xl font-bold text-white font-['alphakind'] degenText">
                       {degensDisplay}
                     </motion.p>
                   </div>
                 </div>
 
                 <div className="p-4 bg-[#21062c] rounded-xl">
-                  <p className="text-sm font-bold text-[#60ff28] mb-2">
+                  <p className="text-lg font-bold text-[#60ff28] mb-2 font-['lalezar']">
                     Factory Output
                   </p>
                   <div className="flex flex-col items-center">
                     <div className="flex justify-center items-center gap-2">
                       <Gauge className="w-5 h-5 text-green-400" />
-                      <motion.p className="text-3xl font-bold text-white">
+                      <motion.p className="text-4xl font-bold text-white font-['alphakind'] factoryText">
                         {outputDisplay}
                       </motion.p>
                     </div>
-                    <p className="text-xs text-green-400">SPBUTTA per sec</p>
+                    <p className="text-xs text-white">SPBUTTA per sec</p>
                   </div>
                 </div>
 
                 <div className="p-4 bg-[#21062c] rounded-xl">
-                  <p className="text-sm font-bold text-[#ff0030] mb-2">
+                  <p className="text-lg font-bold text-[#ff0030] mb-2 font-['lalezar']">
                     Pending SPBUTTA
                   </p>
                   <div className="flex justify-center items-center gap-2">
                     <Flask className="w-5 h-5 text-red-400" />
-                    <motion.p className="text-3xl font-bold text-white">
+                    <motion.p className="text-4xl font-bold text-white font-['alphakind'] pendingText">
                       {pendingDisplay}
                     </motion.p>
                   </div>
@@ -283,15 +332,15 @@ export default function StakeSection() {
 
               {/* Stats Footer */}
               <div className="bg-black/30 p-4 flex flex-col lg:flex-row gap-2 items-center">
-                <div className="flex-1 flex flex-col">
-                  <p className="text-sm text-gray-300">
+                <div className="flex-1 flex flex-col xl:ml-32">
+                  <p className="text-[18px] text-gray-300 font-['hyperspace'] hypeText">
                     Total Ellys on duty:{" "}
                     <span className="font-medium text-white">
                       {ellysOnDuty}
                     </span>
                   </p>
-                  <p className="text-sm text-gray-300">
-                    Total <span className="text-yellow-300">SPBUTTA</span> Jars
+                  <p className="text-[18px] text-gray-300 font-['hyperspace'] hypeText">
+                    Total <span className="text-yellow-300">$PBUTTA</span> Jars
                     Produced:{" "}
                     <AnimatePresence mode="wait">
                       <motion.span
@@ -320,8 +369,11 @@ export default function StakeSection() {
 
                 <button
                   className={`rounded-3xl ${
-                    isAnimating ? "bg-[#260e2c]" : "bg-[#32133a]"
-                  } px-4 py-2 font-bold text-white shadow-lg transition-all hover:from-purple-700 active:scale-95 border-t-2 border-[#833497]`}
+                    isAnimating ? "bg-[#260e2c]" : "bg-[#1e0a25]"
+                  } px-4 py-2 font-bold text-white shadow-lg hover:from-purple-700 transition-all duration-300 ease-in-out
+hover:bg-[#4a1760] hover:text-[#ffcc00] hover:border-[#ff44cc] 
+hover:shadow-[0_0_15px_#b44ecc] hover:scale-105 hover:translate-y-[-2px]
+active:scale-95 border-t-2 border-[#833497]`}
                   onClick={handleClaim}
                   disabled={isAnimating}
                   style={{ fontFamily: "'Comic Relief', sans-serif" }}
@@ -342,7 +394,7 @@ export default function StakeSection() {
                 className="hidden xl:block"
               />
             </div>
-            <div className="lg:text-xl text-sm font-bold font-['Press_Start_2P',_system-ui] mb-[0.75rem] lg:mb-0 xl:mb-0">
+            <div className="text-2xl xl:text-3xl font-bold font-['alphakind'] mb-[0.75rem] lg:mb-0 xl:mb-0">
               Your Ellys On The Line (6)
             </div>
             <div>
@@ -356,8 +408,52 @@ export default function StakeSection() {
               />
             </div>
           </div>
+          <div className="relative !hidden md:!block">
+            {/* Left scroll button */}
+            <button
+              onClick={() => scroll("left")}
+              className="hidden lg:block absolute left-0 top-[70%] -translate-y-1/2 z-30 bg-[white] text-black p-2 rounded-full hover:bg-black/70"
+            >
+              <ChevronLeft size={24} />
+            </button>
 
-          <div className="relative z-20 top-[150px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar">
+            {/* NFT Cards container */}
+            <div
+              ref={scrollContainerRef}
+              className="relative z-20 top-[150px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar"
+            >
+              <NFTCardComponent
+                imageUrl="/Screenshot_1.png"
+                onLunchBreakClick={openModal}
+              />
+              <NFTCardComponent
+                imageUrl="/Screenshot_2.png"
+                onLunchBreakClick={openModal}
+              />
+              <NFTCardComponent
+                imageUrl="/Screenshot_3.png"
+                onLunchBreakClick={openModal}
+              />
+              <NFTCardComponent
+                imageUrl="/Screenshot_4.png"
+                onLunchBreakClick={openModal}
+              />
+              <NFTCardComponent
+                imageUrl="/Screenshot_1.png"
+                onLunchBreakClick={openModal}
+              />
+            </div>
+
+            {/* Right scroll button */}
+            <button
+              onClick={() => scroll("right")}
+              className="hidden lg:block absolute right-0 top-[70%] -translate-y-1/2 z-30 bg-[white] text-black p-2 rounded-full hover:bg-black/70"
+            >
+              <ChevronRight size={24} />
+            </button>
+          </div>
+
+          <div className="md:!hidden relative z-20 top-[150px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar">
             <NFTCardComponent
               imageUrl="/Screenshot_1.png"
               onLunchBreakClick={openModal}
@@ -379,9 +475,10 @@ export default function StakeSection() {
               onLunchBreakClick={openModal}
             />
           </div>
-          <div className="lg:mt-[50] xl:mt-[-80px]">
+
+          <div className="mt-[90px] lg:mt-[0px] xl:mt-[-80px]">
             <Image
-              src="/card-bg.jpg"
+              src="/belt.png"
               width={5000}
               height={300}
               alt="bg"
@@ -398,11 +495,50 @@ export default function StakeSection() {
             unoptimized
             className="hidden lg:block"
           />
-          <p className="font-bold text-xl font-['Press_Start_2P',_system-ui] absolute left-[10%] lg:left-[40%] lg:right-0 lg:top-0 xl:top-2 top-10">
+          <p className="font-bold text-2xl xl:text-3xl font-['alphakind'] absolute left-[29%] lg:left-[40%] lg:right-0 lg:top-0 xl:top-1 top-[22.5rem]">
             Your Ellys (46)
           </p>
         </div>
-        <div className="relative z-20 top-[600px] lg:top-[500px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar">
+        <div className="relative !hidden md:!block">
+          <button
+            onClick={() => scroll2("left")}
+            className="hidden lg:block absolute left-0 top-[120%] -translate-y-1/2 z-30 bg-[white] text-black p-2 rounded-full hover:bg-black/70"
+          >
+            <ChevronLeft size={24} />
+          </button>
+          <div
+            ref={scrollContainerRef2}
+            className="relative z-20 top-[810px] lg:top-[500px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar"
+          >
+            <NFTCardComponent2
+              imageUrl="/Screenshot_1.png"
+              onLunchBreakClick={openModal}
+            />
+            <NFTCardComponent2
+              imageUrl="/Screenshot_2.png"
+              onLunchBreakClick={openModal}
+            />
+            <NFTCardComponent2
+              imageUrl="/Screenshot_3.png"
+              onLunchBreakClick={openModal}
+            />
+            <NFTCardComponent2
+              imageUrl="/Screenshot_4.png"
+              onLunchBreakClick={openModal}
+            />
+            <NFTCardComponent2
+              imageUrl="/Screenshot_1.png"
+              onLunchBreakClick={openModal}
+            />
+          </div>
+          <button
+            onClick={() => scroll2("right")}
+            className="hidden lg:block absolute right-0 top-[120%] -translate-y-1/2 z-30 bg-[white] text-black p-2 rounded-full hover:bg-black/70"
+          >
+            <ChevronRight size={24} />
+          </button>
+        </div>
+        <div className="md:!hidden relative z-20 top-[860px] lg:top-[500px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar">
           <NFTCardComponent2
             imageUrl="/Screenshot_1.png"
             onLunchBreakClick={openModal}

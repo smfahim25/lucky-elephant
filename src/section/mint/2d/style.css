@@ -104,7 +104,7 @@
 }
 
 .full-bg-page {
-  background-image: url("/hero.jpg");
+  background-image: url("/hero.png");
   background-size: cover;
   /* background-position: center; */
   position: relative;
@@ -123,14 +123,34 @@
 }
 
 .machine-text {
-  font-family: "Comic Relief", system-ui;
+  font-family: "alphakind", system-ui;
   font-size: 3rem;
   font-weight: bolder;
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: #833497;
+}
+.buttonText {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #a81eca;
+}
+.degenText {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffe400;
+}
+.factoryText {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #60ff28;
+}
+.pendingText {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ff0030;
+}
+.hypeText {
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #2cb72c;
 }
 .gradient-border-box {
   position: relative;
@@ -239,8 +259,10 @@
   right: 0;
 }
 .wallet-adapter-button-trigger {
-  background-color: #32133a !important;
+  background-color: #1e0a25 !important;
   border: none !important;
   border-top: 2px solid #833497 !important;
   border-radius: 10px !important;
+  line-height: 1 !important;
+  padding: 0 20px !important;
 }

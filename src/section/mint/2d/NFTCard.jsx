@@ -34,7 +34,7 @@ export default function NFTCardComponent({
                   <span className="text-white text-sm font-['Press_Start_2P',_system-ui] mb-1">
                     {period}
                   </span>
-                  <div className="w-5 h-5 rounded-full bg-[#4aff4a] border-2 border-[#833497]"></div>
+                  <img src="/Ellipse.png" alt="ellipse" />
                 </div>
               ))}
             </div>
@@ -44,7 +44,7 @@ export default function NFTCardComponent({
           <div className="px-4 py-2 flex justify-between">
             {[10, 310, 600, 1200, 3650].map((value) => (
               <div key={value} className="flex items-center">
-                <div className="w-5 h-5 bg-[#ffcc4a] flex items-center justify-center rounded-sm mr-1 ">
+                <div className="w-5 h-5 flex items-center justify-center rounded-sm mr-1 ">
                   <JarIcon className="w-3 h-3 text-[#aa8800]" />
                 </div>
                 <span className="text-white text-sm font-['Open_Sans',_system-ui] ">
@@ -68,7 +68,7 @@ export default function NFTCardComponent({
                 Jar Production
               </div>
               <div className="text-md font-bold flex items-center justify-end font-['Open_Sans',_system-ui]">
-                <div className="w-6 h-6 bg-[#ffcc4a] flex items-center justify-center rounded-sm mr-2">
+                <div className="w-6 h-6  flex items-center justify-center rounded-sm mr-2">
                   <JarIcon className="w-4 h-4 text-[#aa8800]" />
                 </div>
                 10/day
@@ -78,7 +78,12 @@ export default function NFTCardComponent({
 
           <div className="p-3">
             <button
-              className="w-full text-md rounded-xl bg-[#32133a] px-2 py-3 font-bold text-white shadow-lg transition-all hover:from-purple-700 active:scale-95 border-t-2 border-[#833497] font-['Press_Start_2P',_system-ui]"
+              className="w-full text-3xl rounded-xl bg-[#1e0a25] px-2 py-3 font-bold text-white shadow-lg 
+      transition-all duration-300 ease-in-out
+hover:bg-[#4a1760] hover:text-[#ffcc00] hover:border-[#ff44cc] 
+hover:shadow-[0_0_15px_#b44ecc] hover:scale-105 hover:translate-y-[-2px]
+active:scale-95  
+       border-t-2 border-[#833497] font-['lalezar'] buttonText"
               onClick={onLunchBreakClick}
             >
               Take a Lunch Break
@@ -91,5 +96,5 @@ export default function NFTCardComponent({
 }
 
 function JarIcon({ className }) {
-  return <img src="/Screenshot_5.png" alt="jar" />;
+  return <img src="/jar.png" alt="jar" />;
 }
