@@ -95,7 +95,9 @@ export default function NFTCardComponent2({
 hover:bg-[#4a1760] hover:text-[#ffcc00] hover:border-[#ff44cc] 
 hover:shadow-[0_0_15px_#b44ecc] hover:scale-105 hover:translate-y-[-2px]
 active:scale-95 border-t-2 border-[#833497] font-['lalezar'] buttonText"
-              onClick={onLunchBreakClick}
+              onClick={() =>
+                onLunchBreakClick("Time Clock", "Time to Clock In & Earn")
+              }
             >
               Send To Work
             </button>

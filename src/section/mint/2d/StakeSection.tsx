@@ -74,12 +74,14 @@ import {
   animate,
 } from "framer-motion";
 import Modals from "./Modal";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import { FreeMode } from "swiper/modules";
 
 const VERIFIED_COLLECTION = "GfvCGwrGQch2vegUXZkQm7up1N1jomwmLx6H5VQ92zTh";
-
-interface ScrollContainerRef {
-  current: HTMLDivElement | null;
-}
 
 export default function StakeSection() {
   const [provider, setProvider] = useState<AnchorProvider | null>(null);
@@ -123,9 +125,12 @@ export default function StakeSection() {
   const pending = useMotionValue(78.3);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalData, setModalData] = useState({ title: "", message: "" });
 
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const handleOpenModal = (title, message) => {
+    setModalData({ title, message });
+    setIsModalOpen(true);
+  };
 
   const degensDisplay = useTransform(degens, (v) =>
     Math.max(0, parseFloat(v.toFixed(0)))
@@ -224,43 +229,6 @@ export default function StakeSection() {
         setIsAnimating(false);
       }, 200);
     });
-  };
-
-  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
-
-  type ScrollDirection = "left" | "right";
-
-  const scroll = (direction: ScrollDirection): void => {
-    const container: HTMLDivElement | null = scrollContainerRef.current;
-    if (container) {
-      const scrollAmount: number = 300; // Adjust as needed
-      const newScrollLeft: number =
-        direction === "left"
-          ? container.scrollLeft - scrollAmount
-          : container.scrollLeft + scrollAmount;
-
-      container.scrollTo({
-        left: newScrollLeft,
-        behavior: "smooth",
-      });
-    }
-  };
-  const scrollContainerRef2 = useRef<HTMLDivElement | null>(null);
-
-  const scroll2 = (direction: ScrollDirection): void => {
-    const container: HTMLDivElement | null = scrollContainerRef.current;
-    if (container) {
-      const scrollAmount: number = 300; // Adjust as needed
-      const newScrollLeft: number =
-        direction === "left"
-          ? container.scrollLeft - scrollAmount
-          : container.scrollLeft + scrollAmount;
-
-      container.scrollTo({
-        left: newScrollLeft,
-        behavior: "smooth",
-      });
-    }
   };
 
   return (
@@ -409,70 +377,89 @@ active:scale-95 border-t-2 border-[#833497]`}
             </div>
           </div>
           <div className="relative !hidden md:!block">
-            {/* Left scroll button */}
-            <button
-              onClick={() => scroll("left")}
-              className="hidden lg:block absolute left-0 top-[70%] -translate-y-1/2 z-30 bg-[white] text-black p-2 rounded-full hover:bg-black/70"
-            >
-              <ChevronLeft size={24} />
-            </button>
-
             {/* NFT Cards container */}
-            <div
-              ref={scrollContainerRef}
-              className="relative z-20 top-[150px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar"
-            >
-              <NFTCardComponent
-                imageUrl="/teaser.jpg"
-                onLunchBreakClick={openModal}
-              />
-              <NFTCardComponent
-                imageUrl="/teaser.jpg"
-                onLunchBreakClick={openModal}
-              />
-              <NFTCardComponent
-                imageUrl="/teaser.jpg"
-                onLunchBreakClick={openModal}
-              />
-              <NFTCardComponent
-                imageUrl="/teaser.jpg"
-                onLunchBreakClick={openModal}
-              />
-              <NFTCardComponent
-                imageUrl="/teaser.jpg"
-                onLunchBreakClick={openModal}
-              />
+            <div className="relative z-20 top-[150px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar">
+              <Swiper
+                breakpoints={{
+                  340: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 15,
+                  },
+                  700: {
+                    slidesPerView: 2,
+                    spaceBetween: 15,
+                  },
+                  991: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                  },
+                  1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                  },
+                  1700: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                  },
+                }}
+                freeMode={true}
+                modules={[FreeMode]}
+                className="mySwiper"
+              >
+                <SwiperSlide>
+                  <NFTCardComponent
+                    imageUrl="/teaser.jpg"
+                    onLunchBreakClick={handleOpenModal}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <NFTCardComponent
+                    imageUrl="/teaser.jpg"
+                    onLunchBreakClick={handleOpenModal}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <NFTCardComponent
+                    imageUrl="/teaser.jpg"
+                    onLunchBreakClick={handleOpenModal}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <NFTCardComponent
+                    imageUrl="/teaser.jpg"
+                    onLunchBreakClick={handleOpenModal}
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <NFTCardComponent
+                    imageUrl="/teaser.jpg"
+                    onLunchBreakClick={handleOpenModal}
+                  />
+                </SwiperSlide>
+              </Swiper>
             </div>
-
-            {/* Right scroll button */}
-            <button
-              onClick={() => scroll("right")}
-              className="hidden lg:block absolute right-0 top-[70%] -translate-y-1/2 z-30 bg-[white] text-black p-2 rounded-full hover:bg-black/70"
-            >
-              <ChevronRight size={24} />
-            </button>
           </div>
 
           <div className="md:!hidden relative z-20 top-[150px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar">
             <NFTCardComponent
               imageUrl="/teaser.jpg"
-              onLunchBreakClick={openModal}
+              onLunchBreakClick={handleOpenModal}
             />
             <NFTCardComponent
               imageUrl="/teaser.jpg"
-              onLunchBreakClick={openModal}
+              onLunchBreakClick={handleOpenModal}
             />
             <NFTCardComponent
               imageUrl="/teaser.jpg"
-              onLunchBreakClick={openModal}
+              onLunchBreakClick={handleOpenModal}
             />
             <NFTCardComponent
               imageUrl="/teaser.jpg"
-              onLunchBreakClick={openModal}
+              onLunchBreakClick={handleOpenModal}
             />
             <NFTCardComponent
               imageUrl="/teaser.jpg"
-              onLunchBreakClick={openModal}
+              onLunchBreakClick={handleOpenModal}
             />
           </div>
 
@@ -500,68 +487,96 @@ active:scale-95 border-t-2 border-[#833497]`}
           </p>
         </div>
         <div className="relative !hidden md:!block">
-          <button
-            onClick={() => scroll2("left")}
-            className="hidden lg:block absolute left-0 top-[120%] -translate-y-1/2 z-30 bg-[white] text-black p-2 rounded-full hover:bg-black/70"
-          >
-            <ChevronLeft size={24} />
-          </button>
-          <div
-            ref={scrollContainerRef2}
-            className="relative z-20 top-[810px] lg:top-[500px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar"
-          >
-            <NFTCardComponent2
-              imageUrl="/teaser.jpg"
-              onLunchBreakClick={openModal}
-            />
-            <NFTCardComponent2
-              imageUrl="/teaser.jpg"
-              onLunchBreakClick={openModal}
-            />
-            <NFTCardComponent2
-              imageUrl="/teaser.jpg"
-              onLunchBreakClick={openModal}
-            />
-            <NFTCardComponent2
-              imageUrl="/teaser.jpg"
-              onLunchBreakClick={openModal}
-            />
-            <NFTCardComponent2
-              imageUrl="/teaser.jpg"
-              onLunchBreakClick={openModal}
-            />
+          <div className="relative z-20 top-[810px] lg:top-[500px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar">
+            <Swiper
+              breakpoints={{
+                340: {
+                  slidesPerView: 1.2,
+                  spaceBetween: 15,
+                },
+                700: {
+                  slidesPerView: 2,
+                  spaceBetween: 15,
+                },
+                991: {
+                  slidesPerView: 3,
+                  spaceBetween: 15,
+                },
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                },
+                1700: {
+                  slidesPerView: 5,
+                  spaceBetween: 20,
+                },
+              }}
+              freeMode={true}
+              modules={[FreeMode]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <NFTCardComponent2
+                  imageUrl="/teaser.jpg"
+                  onLunchBreakClick={handleOpenModal}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <NFTCardComponent2
+                  imageUrl="/teaser.jpg"
+                  onLunchBreakClick={handleOpenModal}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <NFTCardComponent2
+                  imageUrl="/teaser.jpg"
+                  onLunchBreakClick={handleOpenModal}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <NFTCardComponent2
+                  imageUrl="/teaser.jpg"
+                  onLunchBreakClick={handleOpenModal}
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <NFTCardComponent2
+                  imageUrl="/teaser.jpg"
+                  onLunchBreakClick={handleOpenModal}
+                />
+              </SwiperSlide>
+            </Swiper>
           </div>
-          <button
-            onClick={() => scroll2("right")}
-            className="hidden lg:block absolute right-0 top-[120%] -translate-y-1/2 z-30 bg-[white] text-black p-2 rounded-full hover:bg-black/70"
-          >
-            <ChevronRight size={24} />
-          </button>
         </div>
         <div className="md:!hidden relative z-20 top-[860px] lg:top-[500px] flex gap-3 items-center overflow-x-auto px-3 hide-scrollbar">
           <NFTCardComponent2
             imageUrl="/teaser.jpg"
-            onLunchBreakClick={openModal}
+            onLunchBreakClick={handleOpenModal}
           />
           <NFTCardComponent2
             imageUrl="/teaser.jpg"
-            onLunchBreakClick={openModal}
+            onLunchBreakClick={handleOpenModal}
           />
           <NFTCardComponent2
             imageUrl="/teaser.jpg"
-            onLunchBreakClick={openModal}
+            onLunchBreakClick={handleOpenModal}
           />
           <NFTCardComponent2
             imageUrl="/teaser.jpg"
-            onLunchBreakClick={openModal}
+            onLunchBreakClick={handleOpenModal}
           />
           <NFTCardComponent2
             imageUrl="/teaser.jpg"
-            onLunchBreakClick={openModal}
+            onLunchBreakClick={handleOpenModal}
           />
         </div>
       </div>
-      <Modals isOpen={isModalOpen} onClose={closeModal} />
+      <Modals
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title={modalData.title}
+        message={modalData.message}
+      />
     </>
   );
 }

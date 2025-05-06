@@ -1,7 +1,12 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function Modals({ isOpen, onClose }) {
+export default function Modals({
+  isOpen,
+  onClose,
+  title = "Lunch Break",
+  message = "It's time for a break! Enjoy your lunch.",
+}) {
   return (
     <AnimatePresence>
       {isOpen && (
@@ -24,12 +29,7 @@ export default function Modals({ isOpen, onClose }) {
               <motion.div
                 key={i}
                 className="absolute w-3 h-3 rounded-full bg-purple-500 opacity-70"
-                initial={{
-                  x: "50%",
-                  y: "50%",
-                  scale: 0,
-                  opacity: 0,
-                }}
+                initial={{ x: "50%", y: "50%", scale: 0, opacity: 0 }}
                 animate={{
                   x: `${Math.random() * 100}%`,
                   y: `${Math.random() * 100}%`,
@@ -54,13 +54,7 @@ export default function Modals({ isOpen, onClose }) {
               rotateX: 30,
               rotateY: -20,
             }}
-            animate={{
-              opacity: 1,
-              y: 0,
-              scale: 1,
-              rotateX: 0,
-              rotateY: 0,
-            }}
+            animate={{ opacity: 1, y: 0, scale: 1, rotateX: 0, rotateY: 0 }}
             exit={{
               opacity: 0,
               scale: 0.6,
@@ -87,7 +81,7 @@ export default function Modals({ isOpen, onClose }) {
               transition={{
                 duration: 2,
                 times: [0, 0.5, 1],
-                repeat: Number.POSITIVE_INFINITY,
+                repeat: Infinity,
                 repeatType: "reverse",
               }}
             />
@@ -95,13 +89,10 @@ export default function Modals({ isOpen, onClose }) {
             <motion.div
               className="absolute inset-0 border-2 border-white border-opacity-30 rounded-lg"
               initial={{ opacity: 0, scale: 0.9 }}
-              animate={{
-                opacity: [0.2, 0.8, 0.2],
-                scale: [0.9, 1.01, 0.9],
-              }}
+              animate={{ opacity: [0.2, 0.8, 0.2], scale: [0.9, 1.01, 0.9] }}
               transition={{
                 duration: 3,
-                repeat: Number.POSITIVE_INFINITY,
+                repeat: Infinity,
                 repeatType: "reverse",
               }}
             />
@@ -113,7 +104,7 @@ export default function Modals({ isOpen, onClose }) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.5 }}
               >
-                Lunch Break
+                {title}
               </motion.h2>
 
               <motion.p
@@ -122,7 +113,7 @@ export default function Modals({ isOpen, onClose }) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
               >
-                It's time for a break! Enjoy your lunch.
+                {message}
               </motion.p>
 
               <motion.button

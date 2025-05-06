@@ -63,7 +63,7 @@ const Header = ({ solana }) => {
   return (
     <>
       <HeaderStyleWrapper id="navbar">
-        <div className="header_wrapper bg-transparent">
+        <div className="header_wrapper bg-transparent lg:px-[1.5rem]">
           <div className="header_left">
             <div className="logo">
               <img src={logo.src} alt="logo" />
