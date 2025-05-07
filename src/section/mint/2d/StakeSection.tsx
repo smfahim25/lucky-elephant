@@ -276,21 +276,21 @@ export default function StakeSection() {
                   </p>
                   <div className="flex flex-col items-center">
                     <div className="flex justify-center items-center gap-2">
-                      <Gauge className="w-5 h-5 text-green-400" />
+                      <img src="/green.png" alt="greeb reward" />
                       <motion.p className="text-4xl font-bold text-white font-['alphakind'] factoryText">
                         {outputDisplay}
                       </motion.p>
                     </div>
-                    <p className="text-xs text-white">SPBUTTA per sec</p>
+                    <p className="text-xs text-white">$PBUTTA per sec</p>
                   </div>
                 </div>
 
                 <div className="p-4 bg-[#21062c] rounded-xl">
                   <p className="text-lg font-bold text-[#ff0030] mb-2 font-['lalezar']">
-                    Pending SPBUTTA
+                    Pending $PBUTTA
                   </p>
                   <div className="flex justify-center items-center gap-2">
-                    <Flask className="w-5 h-5 text-red-400" />
+                    <img src="/red.png" alt="red reward" />
                     <motion.p className="text-4xl font-bold text-white font-['alphakind'] pendingText">
                       {pendingDisplay}
                     </motion.p>
